@@ -508,8 +508,155 @@ export const recipesData = [
             "Fold the tortilla into a burrito",
             "Serve immediately"
         ]
-    }
+    },
 
-    // 17 more recipes were added with different categories
+    {
+        id: 19,
+        title: "French Toast",
+        category: "breakfast",
+        cuisine: "French",
+        difficulty: "easy",
+        cookTime: 15,
+        servings: 2,
+        image: "/assets/images/french-toast.jpg",
+        videoUrl: "/assets/videos/french-toast-tutorial.mp4",
+        ingredients: [
+            "4 slices bread",
+            "2 eggs",
+            "1/2 cup milk",
+            "1 tablespoon sugar",
+            "1 teaspoon cinnamon",
+            "Butter",
+            "Maple syrup"
+        ],
+        instructions: [
+            "Whisk eggs, milk, sugar and cinnamon together",
+            "Dip each slice of bread into the mixture",
+            "Melt butter in a pan",
+            "Cook bread on both sides until golden",
+            "Serve with maple syrup"
+        ]
+    },
+
+    {
+        id: 20,
+        title: "Tuna Sandwich",
+        category: "lunch",
+        cuisine: "American",
+        difficulty: "easy",
+        cookTime: 10,
+        servings: 2,
+        image: "/assets/images/tuna-sandwich.jpg",
+        videoUrl: "/assets/videos/tuna-sandwich-tutorial.mp4",
+        ingredients: [
+            "1 can tuna",
+            "4 slices bread",
+            "2 tablespoons mayonnaise",
+            "1 celery stalk",
+            "Lettuce",
+            "Black pepper",
+            "Salt"
+        ],
+        instructions: [
+            "Drain the tuna",
+            "Mix tuna with mayonnaise",
+            "Chop the celery and add it to the mixture",
+            "Season with salt and pepper",
+            "Spread the mixture onto the bread",
+            "Add lettuce and close the sandwich"
+        ]
+    },
+
+    {
+        id: 21,
+        title: "Beef Lasagna",
+        category: "dinner",
+        cuisine: "Italian",
+        difficulty: "hard",
+        cookTime: 60,
+        servings: 6,
+        image: "/assets/images/beef-lasagna.jpg",
+        videoUrl: "/assets/videos/beef-lasagna-tutorial.mp4",
+        ingredients: [
+            "500g ground beef",
+            "Lasagna sheets",
+            "400g tomato sauce",
+            "250g mozzarella cheese",
+            "100g Parmesan cheese",
+            "1 onion",
+            "2 garlic cloves"
+        ],
+        instructions: [
+            "Cook the onion and garlic",
+            "Add the ground beef and cook until browned",
+            "Add tomato sauce and simmer",
+            "Layer the meat sauce and lasagna sheets",
+            "Add mozzarella between the layers",
+            "Top with Parmesan cheese",
+            "Bake until golden and bubbling",
+            "Allow to cool before serving"
+        ]
+    },
+
+    {
+        id: 22,
+        title: "Vanilla Cupcakes",
+        category: "dessert",
+        cuisine: "American",
+        difficulty: "easy",
+        cookTime: 25,
+        servings: 12,
+        image: "/assets/images/vanilla-cupcakes.jpg",
+        videoUrl: "/assets/videos/vanilla-cupcakes-tutorial.mp4",
+        ingredients: [
+            "200g flour",
+            "150g sugar",
+            "100g butter",
+            "2 eggs",
+            "120ml milk",
+            "1 teaspoon vanilla extract",
+            "1 teaspoon baking powder"
+        ],
+        instructions: [
+            "Preheat the oven",
+            "Cream the butter and sugar together",
+            "Add the eggs and vanilla",
+            "Mix in the flour and baking powder",
+            "Add the milk and mix until smooth",
+            "Divide the batter between cupcake cases",
+            "Bake until golden",
+            "Allow to cool before serving"
+        ]
+    },
+
+    {
+        id: 23,
+        title: "Mozzarella Caprese Skewers",
+        category: "snacks",
+        cuisine: "Italian",
+        difficulty: "easy",
+        cookTime: 10,
+        servings: 4,
+        image: "/assets/images/caprese-skewers.jpg",
+        videoUrl: "/assets/videos/caprese-skewers-tutorial.mp4",
+        ingredients: [
+            "200g cherry tomatoes",
+            "200g mozzarella balls",
+            "Fresh basil",
+            "2 tablespoons olive oil",
+            "Balsamic glaze",
+            "Black pepper"
+        ],
+        instructions: [
+            "Wash the tomatoes and basil",
+            "Thread tomatoes, mozzarella and basil onto skewers",
+            "Drizzle with olive oil",
+            "Add balsamic glaze",
+            "Season with black pepper",
+            "Serve immediately"
+        ]
+    },
+
+    // 22 more recipes were added with different categories
 
 ];

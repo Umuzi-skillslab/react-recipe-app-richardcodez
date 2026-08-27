@@ -1,3 +1,9 @@
 export default function FavoritesPage() {
-    return <></>
+    return (
+        <>
+            <main>
+                <h1>Favorite Recipes Page</h1>
+            </main>
+        </>
+    );
 }

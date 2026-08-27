@@ -1,3 +1,9 @@
 export default function RecipesPage() {
-    return <></>
+    return (
+        <>
+            <main>
+                <h1>Recipes Page</h1>
+            </main>
+        </>
+    );
 }

@@ -1,3 +1,7 @@
-export default function RecipeList() {
-    return <></>
+const RecipeList = () => {
+    return (
+        <></>
+    );
 }
+
+export default RecipeList;

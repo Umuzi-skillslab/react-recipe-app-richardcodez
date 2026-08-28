@@ -1,3 +1,7 @@
-export default function MealPlanner() {
-    return <></>
+const MealPlanner = () => {
+    return (
+        <></>
+    );
 }
+
+export default MealPlanner;

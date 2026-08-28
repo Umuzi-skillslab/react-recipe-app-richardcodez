@@ -1,3 +1,7 @@
-export default function VideoPlayer() {
-    return <></>
+const VideoPlayer = () => {
+    return (
+        <></>
+    );
 }
+
+export default VideoPlayer;

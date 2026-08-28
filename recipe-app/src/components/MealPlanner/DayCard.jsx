@@ -1,3 +1,7 @@
-export default function DayCard() {
-    return <></>
+const DayCard = () => {
+    return (
+        <></>
+    );
 }
+
+export default DayCard;

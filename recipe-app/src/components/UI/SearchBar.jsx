@@ -1,3 +1,7 @@
-export default function SearchBar() {
-    return <></>
+const SearchBar = () => {
+    return (
+        <></>
+    );
 }
+
+export default SearchBar;

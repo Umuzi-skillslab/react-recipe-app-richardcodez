@@ -1,3 +1,7 @@
-export default function Card() {
-    return <></>
+const Card = () => {
+    return (
+        <></>
+    );
 }
+
+export default Card;

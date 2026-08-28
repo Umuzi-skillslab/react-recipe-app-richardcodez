@@ -1,3 +1,7 @@
-export default function RecipeDetail() {
-    return <></>
+const RecipeDetail = () => {
+    return (
+        <></>
+    );
 }
+
+export default RecipeDetail;

@@ -1,3 +1,7 @@
-export default function AudioPlayer() {
-    return <></>
+const AudioPlayer = () => {
+    return (
+        <></>
+    );
 }
+
+export default AudioPlayer;

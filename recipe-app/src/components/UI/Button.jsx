@@ -1,3 +1,7 @@
-export default function Button() {
-    return <></>
+const Button = () => {
+    return (
+        <></>
+    );
 }
+
+export default Button;

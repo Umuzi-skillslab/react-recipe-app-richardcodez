@@ -1,4 +1,4 @@
-export default function MealPlanner() {
+export default function MealPlannerPage() {
     return (
         <>
             <main>

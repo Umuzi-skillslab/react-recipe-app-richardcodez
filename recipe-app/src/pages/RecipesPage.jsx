@@ -1,4 +1,4 @@
-export default function RecipesPage() {
+const RecipesPage = () => {
     return (
         <>
             <main>
@@ -7,3 +7,5 @@ export default function RecipesPage() {
         </>
     );
 }
+
+export default RecipesPage;

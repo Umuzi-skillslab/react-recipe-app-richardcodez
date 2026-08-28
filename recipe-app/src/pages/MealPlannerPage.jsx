@@ -1,4 +1,4 @@
-export default function MealPlannerPage() {
+const MealPlannerPage = () => {
     return (
         <>
             <main>
@@ -7,3 +7,5 @@ export default function MealPlannerPage() {
         </>
     );
 }
+
+export default MealPlannerPage;

@@ -1,4 +1,4 @@
-export default function FavoritesPage() {
+const FavoritesPage = () => {
     return (
         <>
             <main>
@@ -7,3 +7,5 @@ export default function FavoritesPage() {
         </>
     );
 }
+
+export default FavoritesPage;

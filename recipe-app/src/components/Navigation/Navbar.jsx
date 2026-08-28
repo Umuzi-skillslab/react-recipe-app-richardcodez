@@ -8,19 +8,19 @@ const Navbar = () => {
             <nav className="navbar">
                 <NavLink 
                     to="/" 
-                    className={location.pathname === '/' ? StyleSheet.active : ""}
+                    className={location.pathname === '/' ? styles.active : ""}
                 >Home</NavLink>
                 <NavLink
                     to="/recipes"
-                    className={location.pathname.includes('/recipes') ? StyleSheet.active : ""}
+                    className={location.pathname.includes('/recipes') ? styles.active : ""}
                 >Recipes</NavLink>
                 <NavLink
                     to="/meal-planner"
-                    className={location.pathname === '/meal-planner' ? StyleSheet.active : ""}
+                    className={location.pathname === '/meal-planner' ? styles.active : ""}
                 >Meal Planner</NavLink>
                 <NavLink
                     to="/favorites"
-                    className={location.pathname === '/favorites' ? StyleSheet.active : ""}
+                    className={location.pathname === '/favorites' ? styles.active : ""}
                 >Favorites</NavLink>
             </nav>
         </>

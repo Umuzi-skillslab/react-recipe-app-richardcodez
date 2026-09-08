@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Recipe.module.css"
 import { useState } from "react";
 import Button from "../UI/Button";
+import VideoPlayer from "../Media/VideoPlayer";
 
 const DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 const SLOTS = ['breakfast', 'lunch', 'dinner'];
@@ -27,7 +28,7 @@ const RecipeDetail = ({recipes, favorites, onFavoriteToggle, onAddMeal}) => {
             <div className={styles.detailGrid}>
                 <div>
                     <img src={recipe.image} alt={recipe.title} className={styles.image} />
-                    <video src={recipe.videoUrl} type="video/mp4">Your browser does not support video.</video>
+                    <VideoPlayer videoUrl={recipe.videoUrl} title={`${recipe.title} - Tutorial`} />
                 </div>
                 
                 <div>

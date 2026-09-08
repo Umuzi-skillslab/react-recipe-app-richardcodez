@@ -1,0 +1,52 @@
+.btn {
+    border: none;
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary {
+    background: #2d4a3a;
+    color: #fff;
+}
+
+.secondary {
+    background: transparent;
+    color: #2d4a3a;
+    border: 1.5px solid #2d4a3a;
+}
+
+.danger {
+    background: #a3311a;
+    color: #fff;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem;
+}
+
+.searchForm {
+    display: flex;
+    gap: 0.5rem;
+    border: 1.5px solid #ddd;
+    border-radius: 999px;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+}
+
+.searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.searchSubmit {
+    background: #c1440e;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+}

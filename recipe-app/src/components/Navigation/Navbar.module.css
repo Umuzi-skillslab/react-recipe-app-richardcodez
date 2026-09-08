@@ -1,0 +1,11 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.active {
+    color: var(--color-accent, #c1440e);
+    font-weight: 700;
+}

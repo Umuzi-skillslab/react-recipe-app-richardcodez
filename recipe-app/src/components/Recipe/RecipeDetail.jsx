@@ -4,9 +4,7 @@ import styles from "./Recipe.module.css"
 import { useState } from "react";
 import Button from "../UI/Button";
 import VideoPlayer from "../Media/VideoPlayer";
-
-const DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
-const SLOTS = ['breakfast', 'lunch', 'dinner'];
+import { WEEK_DAYS as DAY, MEAL_SLOTS as SLOTS } from "../../utils/helpers";
 
 const RecipeDetail = ({recipes, favorites, onFavoriteToggle, onAddMeal}) => {
     const { id } = useParams();

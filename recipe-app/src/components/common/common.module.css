@@ -1,0 +1,12 @@
+.footer {
+    border-top: 1px solid #ddd;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.pageHeader {
+    padding: 2rem 0 1rem;
+}

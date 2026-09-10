@@ -16,6 +16,7 @@ const RecipeList = ({ recipes, favorites, onFavoriteToggle }) => {
       {recipes.map((recipe) => (
         <RecipeCard
           key={recipe.id}
+          recipe={recipe}
           isFavorite={favorites.some((fav) => fav.id === recipe.id)}
           onFavoriteToggle={onFavoriteToggle}
         />

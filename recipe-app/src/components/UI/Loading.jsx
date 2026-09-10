@@ -6,6 +6,6 @@ const Loading = ({label}) => {
 
 Loading.propTypes = { label: PropTypes.string };
 
-Loading.defaultProps = { label: "Loading…" };\
+Loading.defaultProps = { label: "Loading…" };
 
 export default Loading;

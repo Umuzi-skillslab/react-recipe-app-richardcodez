@@ -1,4 +1,4 @@
-import styles from "./MealPlanner.module.css";
+import styles from "./common.module.css";
 
 const Footer = () => {
     return (

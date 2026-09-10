@@ -81,3 +81,27 @@
     margin-top: 1rem;
     align-items: center;
 }
+
+/* Recipe filter */
+
+.filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+}
+
+.clearBtn {
+    background: none;
+    border: none;
+    color: #c1440e;
+    font-weight: 600;
+    cursor: pointer;
+}

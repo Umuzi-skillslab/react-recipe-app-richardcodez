@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Button from "../components/UI/Button";
 import Loading from "../components/UI/Loading";
 import RecipeList from "../components/Recipe/RecipeList";
 import AudioPlayer from "../components/Media/AudioPlayer";

@@ -11,6 +11,7 @@ const DayCard = ({ dayLabel, meals, onAddSlot, onRemoveSlot }) => {
         return (
           <div key={slot} className={styles.slot}>
             <span className={styles.slotLabel}>{slot}</span>
+            {/* ternary: filled slot shows the recipe, empty slot shows + Add */}
             {meal ? (
               <div className={styles.slotFilled}>
                 <span>{meal.title}</span>
@@ -18,7 +19,7 @@ const DayCard = ({ dayLabel, meals, onAddSlot, onRemoveSlot }) => {
                   className={styles.slotRemove}
                   onClick={() => onRemoveSlot(slot)}
                 >
-                  X
+                  X Remove
                 </button>
               </div>
             ) : (

@@ -54,6 +54,16 @@
     cursor: pointer;
 }
 
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
 .modalBody {
     background: #fff;
     border-radius: 12px;

@@ -13,12 +13,15 @@ import {recipesData} from './data/recipesData'
 import Navbar from './components/Navigation/Navbar'
 import Footer from './components/common/Footer'
 import { useEffect, useState } from 'react'
+import { buildEmptyMealPlan } from './utils/helpers'
 
 function App() {
 
+  // state management
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [favorites, setFavorites] = useState([]);
+  const [mealPlan, setMealPlan] = useState(buildEmptyMealPlan());
 
   useEffect( () => {
     const timer = setTimeout( () => {
@@ -28,11 +31,28 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect( () => {
+    const saved = localStorage.getItem('mealPlan');
+    if (saved) setMealPlan(JSON.parse(saved));
+  }, []);
+
+  useEffect( () => {
+    localStorage.setItem('mealPlan', JSON.stringify(mealPlan))
+  }, [mealPlan]);
+
   const handleFavoriteToggle = recipe => {
     setFavorites(
       prev => prev.some(fav => fav.id === recipe.id ? prev.filter(fav => fav.id !== recipe.id) : [...prev, recipe])
     );
   };
+
+  const handleAddMeal = (day, slot, recipe) => {
+    setMealPlan( prev => ({ ...prev, [day] : { ...prev[day], [slot] : recipe} }));
+  }
+
+  const handleRemoveMeal = (day, slot) => {
+    setMealPlan( prev => ({ ...prev, [day] : { ...prev[day], [slot] : null} }));
+  }
 
   return (
     <>
@@ -42,7 +62,7 @@ function App() {
           <Route path="/" element={<Home recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} isLoading={isLoading}/>}/>
           <Route path="/recipes" element={<RecipesPage recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} isLoading={isLoading} />}/>
           <Route path="/recipes/:id" element={<RecipeDetail />}/>
-          <Route path="/meal-planner" element={<MealPlannerPage />}/>
+          <Route path="/meal-planner" element={<MealPlannerPage mealPlan={mealPlan} recipes={recipes} onAddMeal={handleAddMeal} onRemoveMeal={handleRemoveMeal} setMealPlan={setMealPlan} />}/>
           <Route path="/favorites" element={<FavoritesPage favorites={favorites} onFavoriteToggle={handleFavoriteToggle} />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>

@@ -8,3 +8,14 @@ export function filterRecipes(recipes, {searchTerm, category, cuisine, difficult
                 .filter(r => cuisine && cuisine !== "all" ? r.cuisine === cuisine : true)
                 .filter(r => difficulty && difficulty !== "all" ? r.difficulty === difficulty : true)
 }
+
+export function buildEmptyMealPlan() {
+    return WEEK_DAYS.reduce( (plan, day) => {
+        plan[day] = {
+            breakfast: null,
+            lunch: null,
+            dinner: null
+        }
+        return plan;
+    }, {});
+}

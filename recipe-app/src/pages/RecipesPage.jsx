@@ -28,7 +28,7 @@ const RecipesPage = ({recipes, favorites, onFavoriteToggle, isLoading}) => {
 
     return (
         <div className = "container">
-            <Header title="Recipes" description="Search and filter the full collection." />
+            <Header title="Recipes" description="Search and filter the full collection of recipes." />
             <SearchBar value={searchTerm} onChange={setSearchterm} onSubmit={setSearchterm} />
             <RecipeFilter 
                 category={category}

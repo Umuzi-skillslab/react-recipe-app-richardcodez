@@ -43,7 +43,7 @@ function App() {
           <Route path="/recipes" element={<RecipesPage recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} isLoading={isLoading} />}/>
           <Route path="/recipes/:id" element={<RecipeDetail />}/>
           <Route path="/meal-planner" element={<MealPlannerPage />}/>
-          <Route path="/favorites" element={<FavoritesPage />}/>
+          <Route path="/favorites" element={<FavoritesPage favorites={favorites} onFavoriteToggle={handleFavoriteToggle} />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
         <Footer />

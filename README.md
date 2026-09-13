@@ -63,7 +63,7 @@ All shared state is owned by `App.jsx` and is sent down as props to routed pages
 
 ## Future Enhancements:
 
-Some of the potential future features that can be added to the Recipe App to enhance user experience arre listed below.
+Some of the potential future features that can be added to the Recipe App to enhance user experience are listed below.
 
 - Real backend and user accounts instead of localStorage
 - Drag and drop recipes directly onto meal planner slots

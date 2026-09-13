@@ -36,8 +36,8 @@ const RecipeDetail = ({recipes, favorites, onFavoriteToggle, onAddMeal}) => {
                     <h1>{recipe.title}</h1>
                     <div className={styles.metaRow}>
                         <span>{recipe.cuisine}</span>
-                        <span>{recipe.cookTime}</span>
-                        <span>{recipe.servings}</span>
+                        <span>{recipe.cookTime} min</span>
+                        <span>{recipe.servings} servings</span>
                         <span>{recipe.difficulty}</span>
                     </div>
 

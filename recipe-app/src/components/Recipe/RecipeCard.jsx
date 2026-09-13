@@ -18,7 +18,7 @@ const RecipeCard = ({recipe, isFavorite, onFavoriteToggle}) => {
                 <img src={recipe.image} alt={recipe.title} className={styles.image} />
                 <div className={styles.cardBody}>
                     <h3>{recipe.title}</h3>
-                    <p>{recipe.cuisine} · {recipe.cookTime}</p>
+                    <p>{recipe.cuisine} · {recipe.cookTime} min</p>
                 </div>
             </Link>
         </Card>

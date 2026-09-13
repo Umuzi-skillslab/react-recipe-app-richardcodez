@@ -27,6 +27,16 @@ All shared state is owned by `App.jsx` and is sent down as props to routed pages
 
 ![component architecture picture](./Screenshots/Component%20Hierarchy.png)
 
+## Installation Instructions and How to View:
+
+- Clone repo using `git clone https://github.com/Umuzi-skillslab/react-recipe-app-richardcodez.git`
+- Open project folder where its cloned
+- cd to recipe-app using `cd ./recipe-app`
+- run this command `npm install`
+- run this command to get the app running locally `npm run dev`
+- open the localhost link that pops up in the terminal after a successful run
+
+
 ## Project Structure:
 
 - **components/** - grouped by feature (Recipe, MealPlanner, Media) or by shared purpose (UI, common, navigation)

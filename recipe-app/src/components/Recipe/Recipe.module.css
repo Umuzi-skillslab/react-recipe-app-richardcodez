@@ -52,14 +52,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    align-items: start;
 }
 
-.meta {
+.metaRow {
     display: flex;
     gap: 1.5rem;
     margin: 1rem 0;
     font-size: 0.9rem;
     color: #555;
+    flex-wrap: wrap;
 }
 
 .ingredientList li {
@@ -80,6 +82,7 @@
     gap: 0.5rem;
     margin-top: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Recipe filter */

@@ -42,8 +42,7 @@ function App() {
 
   const handleFavoriteToggle = recipe => {
     setFavorites(
-      prev => prev.some(fav => fav.id === recipe.id ? prev.filter(fav => fav.id !== recipe.id) : [...prev, recipe])
-    );
+      prev => prev.some(fav => fav.id === recipe.id) ? prev.filter(fav => fav.id !== recipe.id) : [...prev, recipe]);
   };
 
   const handleAddMeal = (day, slot, recipe) => {
@@ -61,7 +60,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} isLoading={isLoading}/>}/>
           <Route path="/recipes" element={<RecipesPage recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} isLoading={isLoading} />}/>
-          <Route path="/recipes/:id" element={<RecipeDetail />}/>
+          <Route path="/recipes/:id" element={<RecipeDetail recipes={recipes} favorites={favorites} onFavoriteToggle={handleFavoriteToggle} onAddMeal={handleAddMeal} />}/>
           <Route path="/meal-planner" element={<MealPlannerPage mealPlan={mealPlan} recipes={recipes} onAddMeal={handleAddMeal} onRemoveMeal={handleRemoveMeal} setMealPlan={setMealPlan} />}/>
           <Route path="/favorites" element={<FavoritesPage favorites={favorites} onFavoriteToggle={handleFavoriteToggle} />}/>
           <Route path="*" element={<NotFound />}/>

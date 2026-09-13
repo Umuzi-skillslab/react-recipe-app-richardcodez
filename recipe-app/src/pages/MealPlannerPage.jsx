@@ -16,7 +16,7 @@ const MealPlannerPage = ({mealPlan, recipes, onAddMeal, onRemoveMeal, setMealPla
                 <p>Slot recipes into breakfast, lunch and dinner for every day of the week.</p>
             </div>
             <div className={styles.actionsRow}>
-                <Button variant="secodnary" onClick={handleClearWeek}>Clear week</Button>
+                <Button variant="danger" onClick={handleClearWeek}>Clear week</Button>
             </div>
             <MealPlanner mealPlan={mealPlan} recipes={recipes} onAddMeal={onAddMeal} onRemoveMeal={onRemoveMeal} />
         </div>

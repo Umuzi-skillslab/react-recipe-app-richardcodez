@@ -7,7 +7,7 @@ const RecipeCard = ({recipe, isFavorite, onFavoriteToggle}) => {
     return (
         <Card>
             <button
-                className={`${styles.favBtn} ${isFavorite? styles.active : ""}`}
+                className={`${styles.favBtn} ${isFavorite? styles.favActive : ""}`}
                 onClick = {() => onFavoriteToggle(recipe)}
                 aria-label="Toggle favorite"
             >

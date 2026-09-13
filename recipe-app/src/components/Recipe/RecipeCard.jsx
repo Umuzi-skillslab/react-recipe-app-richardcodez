@@ -6,6 +6,7 @@ import Card from "../UI/Card";
 const RecipeCard = ({recipe, isFavorite, onFavoriteToggle}) => {
     return (
         <Card>
+            {/* toggles recipe as favorite or not favorite */}
             <button
                 className={`${styles.favBtn} ${isFavorite? styles.favActive : ""}`}
                 onClick = {() => onFavoriteToggle(recipe)}

@@ -42,6 +42,7 @@
     color: #c1440e;
 }
 
+/* highlights active page/route */
 .active {
     color: #c1440e !important;
     border-bottom-color: #c1440e;

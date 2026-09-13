@@ -13,6 +13,7 @@ const RecipeList = ({ recipes, favorites, onFavoriteToggle }) => {
 
   return (
     <div className={styles.grid}>
+      {/* render one recipe card per recipe */}
       {recipes.map((recipe) => (
         <RecipeCard
           key={recipe.id}

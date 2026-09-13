@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const Modal = ({title, onClose, children}) => {
 
-    // close on escape key, clean up when unmounting
+    // close modal on escape key, clean up when unmounting
     useEffect(() => {
         const handleKeyDown = e => {
             if (e.key === "Escape") onClose();

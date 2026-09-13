@@ -23,7 +23,9 @@ function App() {
   const [favorites, setFavorites] = useState([]);
   const [mealPlan, setMealPlan] = useState(buildEmptyMealPlan());
   const isFirstMealPlanRender = useRef(true);
+  const isFirstFavoritesRender = useRef(true);
 
+  // load recipes on mount
   useEffect( () => {
     const timer = setTimeout( () => {
       setRecipes(recipesData);
@@ -32,11 +34,13 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  //  meal plan - load
   useEffect( () => {
     const saved = localStorage.getItem('mealPlan');
     if (saved) setMealPlan(JSON.parse(saved));
   }, []);
 
+  // meal plan - save to local storage whenever it changes
   useEffect( () => {
     if (isFirstMealPlanRender.current) {
       isFirstMealPlanRender.current = false;
@@ -44,6 +48,21 @@ function App() {
     }
     localStorage.setItem('mealPlan', JSON.stringify(mealPlan))
   }, [mealPlan]);
+
+  // favorites - load
+  useEffect(() => {
+    const saved = localStorage.getItem('favorites');
+    if (saved) setFavorites(JSON.parse(saved));
+  }, []);
+
+  // favorites - persist to localstorage
+  useEffect(() => {
+    if (isFirstFavoritesRender.current) {
+      isFirstFavoritesRender.current = false;
+      return;
+    }
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
 
   const handleFavoriteToggle = recipe => {
     setFavorites(

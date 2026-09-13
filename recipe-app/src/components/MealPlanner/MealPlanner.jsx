@@ -3,6 +3,7 @@ import styles from "./MealPlanner.module.css";
 import { WEEK_DAYS as DAYS } from "../../utils/helpers";
 import { useState } from "react";
 import DayCard from "./DayCard";
+import Modal from "../UI/Modal";
 
 const MealPlanner = ({ mealPlan, recipes, onAddMeal, onRemoveMeal }) => {
 
@@ -30,25 +31,22 @@ const MealPlanner = ({ mealPlan, recipes, onAddMeal, onRemoveMeal }) => {
 
         {/* Only mount the modal while a slot is actively being edited */}
         {pickerSlot && (
-            <div className={styles.modalOverlay} onClick={() => setPickerSlot(null)}>
-                <div className={styles.modalBody} onClick={e => e.stopPropagation()}>
-                    <h3>Choose a recipe - {pickerSlot.day} {pickerSlot.slot}</h3>
-                    <div className={styles.pickerGrid}>
-                        {recipes.map(recipe => (
-                            <button key={recipe.id} className={styles.pickerItem} onClick={() => handlePick(recipe)}>
-                                <img src={recipe.image} alt={recipe.title} />
-                                <p>{recipe.title}</p>
-                            </button>
-                        ))}
-                    </div>
+            <Modal title={`Choose a recipe - ${pickerSlot.day} ${pickerSlot.slot}`} onClose={() => setPickerSlot(null)}>
+                <div className={styles.pickerGrid}>
+                    {recipes.map(recipe => (
+                        <button key={recipe.id} className={styles.pickerItem} onClick={() => handlePick(recipe)}>
+                            <img src={recipe.image} alt={recipe.title} />
+                            <p>{recipe.title}</p>
+                        </button>
+                    ))}
                 </div>
-            </div>
+            </Modal>
         )}
     </>
   );
 };
 
-DayCard.propTypes = {
+MealPlanner.propTypes = {
   mealPlan: PropTypes.object.isRequired,
   recipes: PropTypes.array.isRequired,
   onAddMeal: PropTypes.func.isRequired,

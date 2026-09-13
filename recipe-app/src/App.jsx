@@ -12,7 +12,7 @@ import {recipesData} from './data/recipesData'
 
 import Navbar from './components/Navigation/Navbar'
 import Footer from './components/common/Footer'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { buildEmptyMealPlan } from './utils/helpers'
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [mealPlan, setMealPlan] = useState(buildEmptyMealPlan());
+  const isFirstMealPlanRender = useRef(true);
 
   useEffect( () => {
     const timer = setTimeout( () => {
@@ -37,6 +38,10 @@ function App() {
   }, []);
 
   useEffect( () => {
+    if (isFirstMealPlanRender.current) {
+      isFirstMealPlanRender.current = false;
+      return;
+    }
     localStorage.setItem('mealPlan', JSON.stringify(mealPlan))
   }, [mealPlan]);
 

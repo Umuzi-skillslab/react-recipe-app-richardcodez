@@ -55,26 +55,6 @@
     cursor: pointer;
 }
 
-.modalOverlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.modalBody {
-    background: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    max-width: 500px;
-    width: 100%;
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
 .pickerGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));

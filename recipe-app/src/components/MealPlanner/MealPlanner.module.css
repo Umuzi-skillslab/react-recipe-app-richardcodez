@@ -1,0 +1,84 @@
+.weekGrid {
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.dayCard {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.dayName {
+    font-weight: 700;
+    border-bottom: 2px solid #c1440e;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+}
+
+.slot {
+    background: #f4efe2;
+    border-radius: 8px;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.slotLabel {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #888;
+    display: block;
+}
+
+.slotFilled {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slotRemove {
+    background: none;
+    border: none;
+    color: #a3311a;
+    cursor: pointer;
+}
+
+.slotAddBtn {
+    background: none;
+    border: 1px dashed #ccc;
+    border-radius: 6px;
+    padding: 0.4rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pickerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.pickerItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    text-align: left;
+}
+
+.pickerItem img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.pickerItem p {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    margin: 0;
+}

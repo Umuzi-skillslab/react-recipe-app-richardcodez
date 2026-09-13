@@ -1,0 +1,113 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 1rem;
+    position: relative;
+}
+
+.favBtn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    z-index: 1;
+    border: 1.5px solid #ddd;
+}
+
+.favActive {
+    color: #c1440e;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #666;
+}
+
+.detailGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.metaRow {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    flex-wrap: wrap;
+}
+
+.ingredientList li {
+    padding: 0.4rem 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.instructionList {
+    padding-left: 1.2rem;
+}
+
+.instructionList li {
+    padding: 0.5rem 0;
+}
+
+.planRow {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Recipe filter */
+
+.filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.select {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+}
+
+.clearBtn {
+    background: none;
+    border: none;
+    color: #c1440e;
+    font-weight: 600;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #122236;
+    border-bottom: 1px solid #d8cba6;
+    padding: 0.75rem 0;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #f4efe2;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.links a {
+    color: #f4efe2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.links a:hover {
+    color: #c1440e;
+}
+
+/* highlights active page/route */
+.active {
+    color: #c1440e !important;
+    border-bottom-color: #c1440e;
+}

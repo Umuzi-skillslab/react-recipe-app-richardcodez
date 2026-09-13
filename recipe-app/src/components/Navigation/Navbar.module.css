@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: #f4efe2;
+    background: #122236;
     border-bottom: 1px solid #d8cba6;
     padding: 0.75rem 0;
 }
@@ -19,7 +19,7 @@
 .brand {
     font-weight: 700;
     font-size: 1.25rem;
-    color: #1c3227;
+    color: #f4efe2;
     text-decoration: none;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .links a {
-    color: #2b2b26;
+    color: #f4efe2;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;

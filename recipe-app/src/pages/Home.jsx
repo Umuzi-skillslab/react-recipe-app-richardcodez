@@ -5,7 +5,7 @@ import Loading from "../components/UI/Loading";
 import RecipeList from "../components/Recipe/RecipeList";
 import AudioPlayer from "../components/Media/AudioPlayer";
 
-const TIP_AUDIO = "https://www.w3schools.com/html/horse.ogg";
+const TIP_AUDIO = "../../public/assets/audio/seasoning_tip.mp3";
 
 const Home = ({ recipes, favorites, onFavoriteToggle, isLoading }) => {
   const featured = recipes.slice(0, 3);
@@ -40,7 +40,7 @@ const Home = ({ recipes, favorites, onFavoriteToggle, isLoading }) => {
 
       <section style={{ padding: "2rem 0" }}>
         <h2>Today's cooking tip</h2>
-        <AudioPlayer audioUrl={TIP_AUDIO} title="60-second seasoning tip" />
+        <AudioPlayer audioUrl={TIP_AUDIO} title="Seasoning tip" />
       </section>
     </div>
   );

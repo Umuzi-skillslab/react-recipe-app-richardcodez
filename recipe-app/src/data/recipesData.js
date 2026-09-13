@@ -8,7 +8,7 @@ export const recipesData = [
         difficulty: "medium",
         cookTime: 25,
         servings: 4,
-        image: "/assets/images/carbonara.jpg",
+        image: "/assets/images/spaghetti_carbonara.jpg",
         videoUrl: "/assets/videos/carbonara-tutorial.mp4",
         ingredients: [
             "400g spaghetti",
@@ -37,8 +37,8 @@ export const recipesData = [
         difficulty: "easy",
         cookTime: 20,
         servings: 4,
-        image: "/assets/images/pancakes.jpg",
-        videoUrl: "/assets/videos/pancakes-tutorial.mp4",
+        image: "/assets/images/Fluffy_Pancakes.jpg",
+        videoUrl: "/assets/videos/Fluffy_Pancakes.mp4",
         ingredients: [
             "2 cups flour",
             "2 eggs",
@@ -67,7 +67,7 @@ export const recipesData = [
         difficulty: "easy",
         cookTime: 10,
         servings: 2,
-        image: "/assets/images/avocado-toast.jpg",
+        image: "/assets/images/Avocado_Toast.jpg",
         videoUrl: "/assets/videos/avocado-toast-tutorial.mp4",
         ingredients: [
             "2 slices sourdough bread",
@@ -94,7 +94,7 @@ export const recipesData = [
         difficulty: "medium",
         cookTime: 10,
         servings: 1,
-        image: "/assets/images/french-omelette.jpg",
+        image: "/assets/images/French_Omelette.jpg",
         videoUrl: "/assets/videos/french-omelette-tutorial.mp4",
         ingredients: [
             "3 eggs",
@@ -121,7 +121,7 @@ export const recipesData = [
         difficulty: "easy",
         cookTime: 20,
         servings: 2,
-        image: "/assets/images/chicken-caesar.jpg",
+        image: "/assets/images/Chicken _Caesar.jpg",
         videoUrl: "/assets/videos/chicken-caesar-tutorial.mp4",
         ingredients: [
             "2 chicken breasts",
@@ -204,7 +204,7 @@ export const recipesData = [
         cuisine: "Italian",
         difficulty: "easy",
         cookTime: 20,
-        servings: 4,
+        servings: 4, 
         image: "/assets/images/tomato-pasta.jpg",
         videoUrl: "/assets/videos/tomato-pasta-tutorial.mp4",
         ingredients: [

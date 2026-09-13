@@ -41,7 +41,6 @@ All shared state is owned by `App.jsx` and is sent down as props to routed pages
 
 - **components/** - grouped by feature (Recipe, MealPlanner, Media) or by shared purpose (UI, common, navigation)
 - **pages/** - one file per route, composed from smaller components
-- **data/** - the static recipe catalog
 - **data/** - static recipe data catalog
 - **utils/** - sahred constants and pure functions used across multiple components, avoids duplicated logic
 
